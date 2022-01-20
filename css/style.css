@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --pink  : #e71a68;
+    --orange: #f56406;
+    --purple: #991d5f;
+    --grey: #8f837e;
+}
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin:0;
+}
+
+.container-100 {
+    width: 100%;
+    margin: auto;
+}
+
+.container-60 {
+    width: 60%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--white);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--white);
+
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 2.2rem;
+    font-weight: lighter;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color:var(--black);
+    padding: 25px 0;
+}
+
+nav .container-60 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;      
+}
+
+#menu a {
+    color: var(--grey);
+}
+
+nav p {
+    color: var(--white);
+}
+
+header {
+    background: transparent linear-gradient(130deg, var(--pink) 0%, var(--orange) 100%) fixed;
+    text-align: center;
+    padding: 150px 0;
+}
+
+/* Learn more button */
+header a {
+    background-color: var(--purple);
+    padding: 15px 20px;
+    color: var(--white);
+    border-radius: 30px;
+    font-size: 0.7rem;
+
+}
+
+.images {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+section {
+    margin-top: 50px;
+}
+
+section:nth-child(odd) {
+    display: flex;
+    place-items: center;
+}
+
+section:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    place-items: center;
+}
+
+.card {
+    margin: 100px 50px;
+
+}
+
+footer {
+    border-top: 1px solid var(--grey);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+footer p {
+    color: var(--grey);
+}
+
+span {
+    font-weight: bold;
+}
